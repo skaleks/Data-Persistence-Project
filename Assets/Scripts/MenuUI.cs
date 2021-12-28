@@ -17,7 +17,7 @@ public class MenuUI : MonoBehaviour
     public Text BestScoreText;
     private string Name;
     private int Score;
-    private string CurrentName;
+    public string CurrentName { get; private set; }
 
 
     private void Awake()
@@ -60,10 +60,10 @@ public class MenuUI : MonoBehaviour
         Debug.Log(input);
     }
 
-    public string GetCurrentName()
-    {
-        return CurrentName;
-    }
+    //public string GetCurrentName()
+    //{
+    //    return CurrentName;
+    //}
 
 
 

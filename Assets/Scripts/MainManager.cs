@@ -88,7 +88,7 @@ public class MainManager : MonoBehaviour
 
         if (m_Points > bestScore)
         {
-            GameManager.Instance.SaveBestName(MenuUI.Instance.GetCurrentName());
+            GameManager.Instance.SaveBestName(MenuUI.Instance.CurrentName);
             GameManager.Instance.SaveBestScore(m_Points);
         }
 
